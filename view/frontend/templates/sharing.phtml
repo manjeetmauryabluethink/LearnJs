@@ -1,0 +1,10 @@
+<?php
+
+/** @var $viewModel \TenGun\SharingControls\ViewModel\SharingControls */
+
+$viewModel = $block->getViewModel();
+?>
+<div data-mage-init='{"place-order-mixin": {}}' >
+<script>
+    window.configValue = '<?=  $block->escapeHtml($viewModel->isEnabled()); ?>';
+</script>
